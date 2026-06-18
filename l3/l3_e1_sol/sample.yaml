@@ -3,8 +3,6 @@ sample:
   
 common: 
     sysbuild: true
-    build_only: true
-    skip: true
     integration_platforms: 
       - nrf52dk/nrf52832
       - nrf52833dk/nrf52833
@@ -45,4 +43,10 @@ common:
       - thingy91x/nrf9151/ns
     
 tests:
-  ncs_fund.l3.e1_sol: {}
+  ncs_fund.l3.e1_sol:
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "Hello World"
+    timeout: 15
