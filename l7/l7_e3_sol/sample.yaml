@@ -43,4 +43,10 @@ common:
       - thingy91x/nrf9151/ns
     
 tests:
-  ncs_fund.l7.e3_sol: {}
+  ncs_fund.l7.e3_sol:
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "thread0 yielding this round in"
+    timeout: 15

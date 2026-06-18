@@ -43,4 +43,10 @@ common:
       - thingy91x/nrf9151/ns
     
 tests:
-  ncs_fund.l8.e2_sol: {}
+  ncs_fund.l8.e2_sol:
+    harness: console
+    harness_config:
+      type: one_line
+      regex:
+        - "Thread 0 started"
+    timeout: 15
