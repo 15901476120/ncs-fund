@@ -48,5 +48,5 @@ tests:
     harness_config:
       type: one_line
       regex:
-        - "Thread 0 started"
+        - "Starting Lesson 8 - Exercise 2"
     timeout: 15
