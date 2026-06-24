@@ -1,4 +1,4 @@
-]633;E;cat -A /tmp/thingy53_partitions_fixed.dtsi | head -20;42ab078d-ad8d-4463-8e0f-8a91cfaf7c97]633;C/*
+/*
  * Copyright (c) 2026 Nordic Semiconductor ASA
  *
  * SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
